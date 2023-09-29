@@ -36,7 +36,7 @@ jobs:
       - name: Pre Install
         run: |
           echo "creating link for homebrew"
-          ln -s /usr/local/ /opt/homebrew
+          sudo ln -s /usr/local/ /opt/homebrew
           ls /opt/homebrew/
       
       # install prerequisites
