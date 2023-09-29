@@ -42,7 +42,7 @@ jobs:
       # install prerequisites
       - name: Preqrequisites
         run: |
-          brew install wget cmake protobuf bazelisk opencv@3
+          brew install wget cmake protobuf bazelisk opencv@3 jpeg
           brew uninstall --ignore-dependencies glog
 
       # run build command
