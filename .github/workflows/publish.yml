@@ -6,7 +6,7 @@ on:
       tag:
         description: 'Version Tag'
         required: false
-        default: 'v0.9.2.1'
+        default: 'v0.10.5'
 
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.8'
+          python-version: '3.9'
 
       - name: "Download binaries from ${{ github.event.inputs.tag }}"
         uses: robinraju/release-downloader@v1.3
