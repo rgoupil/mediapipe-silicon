@@ -16,7 +16,7 @@ fi
 pip install wheel
 pip install six
 
-mediapipe_tag="v0.9.1"
+mediapipe_tag="v0.10.5"
 mediapipe_dir="mediapipe"
 
 # cleanup
@@ -44,7 +44,7 @@ git apply "$patches_dir/workspace.patch"
 
 # build
 python setup.py gen_protos
-python setup.py bdist_wheel --plat-name macosx-12.0-arm64
+python setup.py bdist_wheel --plat-name macosx-13.0-arm64
 
 pushd dist || exit
 
